@@ -1,9 +1,11 @@
 [package]
-name = "clickup-cli"
+name = "cup"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
-clap = "4.5.9"
+clap = { version = "4.5.9", features = ["derive"] }
+dotenv = "0.15.0"
+rouille = "3.6.2"
+shlex = "1.3.0"
+tokio = { version = "1.39.2", features = ["full"] }
